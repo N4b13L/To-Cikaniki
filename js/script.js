@@ -24,11 +24,9 @@ window.onload = () => {
     document.querySelector('.right').classList.add('open-right');
 
     document.getElementById('bg-music').play();
-
-    // mulai typing slide pertama
-    playSlideTyping(slides[0]);
-
   }, 1000);
+
+  playSlideTyping(slides[0]);
 };
 
 // 🎭 buka tirai + start music
