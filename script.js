@@ -12,13 +12,14 @@ let currentSlide = 0;
     }
 
 function startExperience() {
-  // mulai musik
-  document.getElementById('bg-music').play();
+  const music = document.getElementById('bg-music');
 
-  // lanjut slide
+  music.play().catch(err => {
+    console.log("Audio gagal:", err);
+  });
+
   nextSlide();
 }
-
     function showEnding() {
       slides[currentSlide].classList.remove('active');
       const ending = document.getElementById('ending');
