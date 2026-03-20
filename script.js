@@ -22,6 +22,7 @@ function startExperience() {
   const music = document.getElementById('bg-music');
 
   if (music) {
+    music.volume = 0.5;
     music.play().catch(err => console.log("Audio error:", err));
   }
 
@@ -30,14 +31,6 @@ function startExperience() {
 music.volume = 0.5;
 
 // 🎭 buka tirai + start music
-window.onload = () => {
-  setTimeout(() => {
-    document.querySelector('.left').classList.add('open-left');
-    document.querySelector('.right').classList.add('open-right');
-  }, 1000);
-  // mulai typing slide pertama
-    playSlideTyping(slides[0]);
-};
 window.onload = () => {
   setTimeout(() => {
     const left = document.querySelector('.left');
