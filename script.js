@@ -20,12 +20,14 @@ let currentSlide = 0;
 
 function startExperience() {
   const music = document.getElementById('bg-music');
-
-  if (music) {
-    music.volume = 0.5;
-    music.play().catch(err => console.log("Audio error:", err));
+  try {
+    if (music) {
+      music.volume = 0.5;
+      music.play();
+    }
+  } catch (e) {
+    console.log("Music error:", e);
   }
-
   nextSlide();
 }
 
