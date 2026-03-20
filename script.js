@@ -24,11 +24,9 @@ window.onload = () => {
     document.querySelector('.right').classList.add('open-right');
 
     document.getElementById('bg-music').play();
-
-    // mulai typing slide pertama
-    playSlideTyping(slides[0]);
-
   }, 1000);
+
+  playSlideTyping(slides[0]);
 };
 
 // 🎭 buka tirai + start music
@@ -83,7 +81,7 @@ canvas.height = window.innerHeight;
 let petals = [];
 
 const sakuraImg = new Image();
-sakuraImg.src = "assets/textures/sakura.png";
+sakuraImg.src = "sakura.png";
 
 class Petal {
   constructor() {
@@ -189,7 +187,7 @@ starGeometry.setAttribute(
   new THREE.Float32BufferAttribute(positions, 3)
 );
 
-const starTexture = textureLoader.load("assets/textures/star.png");
+const starTexture = textureLoader.load("star.png");
 
 const starMaterial = new THREE.PointsMaterial({
   map: starTexture,
