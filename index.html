@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Eid Mubarak 🌙</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🎵 Background Music -->
+  <audio id="bg-music" loop>
+    <source src="assets/music/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 🎭 Curtain -->
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <div id="three-container"></div>
+  <canvas id="sakura"></canvas>
+
+  <!-- 🌙 SLIDES CONTAINER -->
+  <div class="slides">
+
+    <!-- Slide 1 -->
+<section class="slide active" id="slide1">
+  <h1 class="typing" data-text="Assalamu'alaikum..."></h1>
+  <p class="typing" data-text="Klik dulu tombol yang ada di bawah ini ya ^_^"></p>
+  <button onclick="nextSlide()">Buka Pesan 💌</button>
+</section>
+
+<!-- Slide 2 -->
+<section class="slide" id="slide2">
+  <p class="typing" data-text="Haii KAAMILIAA AMABILIS CIKANIKI RAIN..."></p>
+  <p class="typing" data-text="Udah lama ya..."></p>
+  <p class="typing" data-text="Aku ngga buat program sederhana kayak gini buat kamu ^_^"></p>
+  <button onclick="nextSlide()">Lanjut 👉</button>
+</section>
+
+<!-- Slide 3 -->
+<section class="slide" id="slide3">
+  <p class="typing" data-text="Di hari kemenangan ini..."></p>
+  <p class="typing" data-text="Aku mau ngucapin Minal 'Aidin wal-Faizin... ^_^"></p>
+  <button onclick="nextSlide()">Lanjut 👉</button>
+</section>
+
+<!-- Slide 4 -->
+<section class="slide" id="slide4">
+  <p class="typing" data-text="Maafin ya..."></p>
+  <p class="typing" data-text="Buat kesalahan-kesalahan aku setahun belakang..."></p>
+  <button onclick="nextSlide()">Lanjut 👉</button>
+</section>
+
+<!-- Slide 5 -->
+<section class="slide" id="slide5">
+  <p class="typing" data-text="Maafin juga..."></p>
+  <p class="typing" data-text="Aku pernah jadi alasan kamu ngerasa kecewa :("></p>
+  <button onclick="nextSlide()">Lanjut 👉</button>
+</section>
+
+<!-- Slide 6 -->
+<section class="slide" id="slide6">
+  <p class="typing" data-text="Jadii..."></p>
+  <p class="typing" data-text="Aku berharap..."></p>
+  <p class="typing" data-text="Ke depannya... kita bisa bersama..."></p>
+  <p class="typing" data-text="Bersama... sampai???"></p>
+  <p class="typing" data-text="Sampai selamanyaa... hehe"></p>
+  <p class="typing" data-text="Aamiin..."></p>
+  <button onclick="nextSlide()">Lanjut 👉</button>
+</section>
+
+<!-- Slide 7 -->
+<section class="slide" id="slide7">
+  <p class="typing" data-text="Aku tau,"></p>
+  <p class="typing" data-text="Kamu lagi di posisi, dimana kamu tuh..."></p>
+  <p class="typing" data-text="Sedang di fase yang mungkin beratnya itu sangat... berat :)"></p>
+  <p class="typing" data-text="Jadi..."></p>
+  <button onclick="showEnding()">Klik ini ya 💖</button>
+</section>
+
+<!-- 💖 ENDING -->
+<section class="slide" id="ending">
+  <h1 class="typing" data-text="Tetep semangat yah"></h1>
+  <h2 class="typing" data-text="Cintaku..."></h2>
+  <h3 class="typing" data-text="Sayaangku..."></h3>
+  <h4 class="typing" data-text="Cantikku..."></h4>
+  <p class="typing" data-text="Kamu pasti kuat ngelewatinnya..."></p>
+  <p class="typing" data-text="Sekali lagi S-E-M-A-N-G-A-T ^_^"></p>
+  <h5 class="typing" data-text="SEEMAANGAATT"></h5>
+</section>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
