@@ -11,15 +11,6 @@ let currentSlide = 0;
       }
     }
 
-function startExperience() {
-  const music = document.getElementById('bg-music');
-
-  music.play().catch(err => {
-    console.log("Audio gagal:", err);
-  });
-
-  nextSlide();
-}
     function showEnding() {
       slides[currentSlide].classList.remove('active');
       const ending = document.getElementById('ending');
@@ -27,22 +18,21 @@ function startExperience() {
       playSlideTyping(ending);
     }
 
-window.onload = () => {
-  setTimeout(() => {
-    document.querySelector('.left').classList.add('open-left');
-    document.querySelector('.right').classList.add('open-right');
-  }, 1000);
+function startExperience() {
+  const music = document.getElementById('bg-music');
 
-  playSlideTyping(slides[0]);
-};
+  if (music) {
+    music.play().catch(err => console.log(err));
+  }
+  nextSlide();
+}
+music.volume = 0.5;
 
 // 🎭 buka tirai + start music
 window.onload = () => {
   setTimeout(() => {
     document.querySelector('.left').classList.add('open-left');
     document.querySelector('.right').classList.add('open-right');
-
-    document.getElementById('bg-music').play();
   }, 1000);
   // mulai typing slide pertama
     playSlideTyping(slides[0]);
