@@ -31,8 +31,6 @@ window.onload = () => {
   setTimeout(() => {
     document.querySelector('.left').classList.add('open-left');
     document.querySelector('.right').classList.add('open-right');
-
-    document.getElementById('bg-music').play();
   }, 1000);
 
   playSlideTyping(slides[0]);
