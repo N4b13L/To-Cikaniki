@@ -11,6 +11,14 @@ let currentSlide = 0;
       }
     }
 
+function startExperience() {
+  // mulai musik
+  document.getElementById('bg-music').play();
+
+  // lanjut slide
+  nextSlide();
+}
+
     function showEnding() {
       slides[currentSlide].classList.remove('active');
       const ending = document.getElementById('ending');
