@@ -22,8 +22,9 @@ function startExperience() {
   const music = document.getElementById('bg-music');
 
   if (music) {
-    music.play().catch(err => console.log(err));
+    music.play().catch(err => console.log("Audio error:", err));
   }
+
   nextSlide();
 }
 music.volume = 0.5;
@@ -36,6 +37,19 @@ window.onload = () => {
   }, 1000);
   // mulai typing slide pertama
     playSlideTyping(slides[0]);
+};
+window.onload = () => {
+  setTimeout(() => {
+    const left = document.querySelector('.left');
+    const right = document.querySelector('.right');
+
+    if (left && right) {
+      left.classList.add('open-left');
+      right.classList.add('open-right');
+    }
+  }, 1000);
+
+  playSlideTyping(slides[0]);
 };
 
 function typeElement(element, text, speed = 40) {
