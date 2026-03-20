@@ -28,7 +28,6 @@ function startExperience() {
 
   nextSlide();
 }
-music.volume = 0.5;
 
 // 🎭 buka tirai + start music
 window.onload = () => {
